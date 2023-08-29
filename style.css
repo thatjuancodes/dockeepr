@@ -6,5 +6,37 @@ p {
 input.pseudo-field {
   border: 0;
   border-bottom: 1px solid #2e2e2e;
-  min-width: 15rem;
+  min-width: 10rem;
+  width: fit-content;
+}
+
+@media print {
+  input.pseudo-field {
+    border: 0;
+    border-bottom: 0;
+  }
+
+  h1.doc-title, button.btn {
+    display: none;
+  }
+
+  ::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: transparent;
+  }
+  :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: transparent;
+  }
+  ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: transparent;
+  }
+  :-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: transparent;
+  }
+  input::placeholder {
+      color: transparent;
+  }
 }
