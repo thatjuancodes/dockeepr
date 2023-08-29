@@ -6,4 +6,5 @@ p {
 input.pseudo-field {
   border: 0;
   border-bottom: 1px solid #2e2e2e;
+  min-width: 15rem;
 }
