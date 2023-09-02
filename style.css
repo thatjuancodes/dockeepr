@@ -11,6 +11,10 @@ input.pseudo-field {
 }
 
 @media print {
+  .container {
+    padding-top: 0px !important;
+  }
+
   input.pseudo-field {
     border: 0;
     border-bottom: 0;
