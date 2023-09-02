@@ -10,7 +10,30 @@ input.pseudo-field {
   width: fit-content;
 }
 
+div.actual div.actual-field {
+  min-width: 10rem;
+  display: inline-block;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+div.actual div.long {
+  min-width: 30rem;
+}
+
 @media print {
+  div.pseudo {
+    display: none;
+  }
+
+  div.actual {
+    display: block;
+    border: 0 !important;
+  }
+
+  .segment-title {
+    display: none;
+  }
+
   .container {
     padding-top: 0px !important;
   }
@@ -20,7 +43,7 @@ input.pseudo-field {
     border-bottom: 0;
   }
 
-  h1.doc-title, button.btn {
+  button.btn {
     display: none;
   }
 
