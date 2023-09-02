@@ -24,6 +24,18 @@ div.actual div.long {
   font-size: 12px;
 }
 
+.social {
+  padding-left: 0;
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.social li {
+  float: left;
+  margin: 0 1rem;
+}
+
 @media print {
   div.pseudo {
     display: none;
