@@ -20,6 +20,10 @@ div.actual div.long {
   min-width: 30rem;
 }
 
+.font-small {
+  font-size: 12px;
+}
+
 @media print {
   div.pseudo {
     display: none;
@@ -32,6 +36,10 @@ div.actual div.long {
 
   .segment-title {
     display: none;
+  }
+
+  .doc-body {
+    margin-top: 0px !important;
   }
 
   .container {
