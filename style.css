@@ -3,6 +3,10 @@ p {
   font-size: 1rem;
 }
 
+.social li {
+  min-width: 5rem;
+}
+
 input.pseudo-field {
   border: 0;
   border-bottom: 1px solid #2e2e2e;
