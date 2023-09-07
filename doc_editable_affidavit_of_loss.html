@@ -30,30 +30,9 @@
         </div>
       </div>
 
-      <div class="row text-start">
-        <div class="col-md-6 pseudo border border-secondary">
-          <h3 class="text-center segment-title text-secondary mt-4">Draft (Edit Here)</h3>
-
-          <p class="px-5 mt-5 doc-body">
-            I, <input type="text" class="pseudo-field" placeholder="Your Name" onKeyUp="changeField(this, 'name'); changeField(this, 'name-signature'); changeField(this, 'name-signature-pseudo');"/> of legal age, Filipino citizen, and resident of <input type="text" class="pseudo-field" placeholder="Your Address" onKeyUp="changeField(this, 'address')">, <input type="text" class="pseudo-field" placeholder="Country" onKeyUp="changeField(this, 'country')">, after being duly sworn in accordance with law, hereby depose and state under oath:
-            <br/><br/>
-            1. That I am the lawful owner/holder of the following lost item/document: <input type="text" class="pseudo-field" placeholder="Your Lost Item" onKeyUp="changeField(this, 'lost-item')">.
-            <br/>
-            2. That the lost item/document was in my possession and custody, and I have exercised due care and diligence to keep it safe and secure.
-            <br/>
-            3. That I have made a diligent search and inquiry to locate the lost item/document but to no avail. It is irretrievably lost and cannot be recovered.
-            <br/>
-            4. That the loss of the said item/document was not due to any negligence, willful act, or omission on my part.
-            <br/>
-            5. That I am executing this Affidavit of Loss to attest to the truth of the foregoing facts and for the purpose of applying for the issuance of a new/replacement item/document.
-            <br/>
-            IN WITNESS WHEREOF, I have hereunto set my hand this 
-            <input type="text" class="pseudo-field" placeholder="Day" onKeyUp="changeField(this, 'day')"> of <input type="text" class="pseudo-field" placeholder="Month" onKeyUp="changeField(this, 'month')">, <input type="text" class="pseudo-field" placeholder="Year" onKeyUp="changeField(this, 'year')">, in <input type="text" class="pseudo-field" placeholder="City/Municipality" onKeyUp="changeField(this, 'city')">, <input type="text" class="pseudo-field" placeholder="Country" onKeyUp="changeField(this, 'country-signature')">.
-            <br/>
-        </div>
-
-        <div class="col-md-6 actual border border-primary">
-          <h3 class="text-center segment-title text-primary mt-4">Actual Printout</h3>
+      <div id="document-parent" class="row text-start">
+        <div id="document-actual" class="col-md-6 actual border border-primary">
+          <h3 class="view-title text-center segment-title text-primary mt-4">Actual Printout</h3>
 
           <div class="doc-body px-5 mt-5">
             I, <div id="name" class="actual-field"></div> of legal age, Filipino citizen, and resident of <div id="address" class="actual-field"></div>, <div id="country" class="actual-field"></div>, after being duly sworn in accordance with law, hereby depose and state under oath:
@@ -112,6 +91,7 @@
     <script src='./components/footer-template.js'></script>
     <script src='./components/print-button.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/populate-document.js"></script>
   </body>
 </html>
