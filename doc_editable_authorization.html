@@ -31,41 +31,8 @@
       </div>
 
       <div id="document-parent" class="row text-start">
-        <!-- <div class="col-md-6 pseudo border border-secondary">
-          <h3 class="text-center segment-title text-secondary mt-4">Draft (Edit Here)</h3>
-
-          <p class="px-5 mt-5">
-            <input type="text" class="pseudo-field" placeholder="Date Today" onKeyUp="changeField(this, 'date-today')">
-            <br/><br/>
-            <input type="text" class="pseudo-field" placeholder="Addressee" onKeyUp="changeField(this, 'addressee')">
-            <br/>
-            <input type="text" class="pseudo-field" placeholder="Addressee Line 2" onKeyUp="changeField(this, 'addressee-2')">
-
-            <br/><br/>
-            <br/><br/>
-
-            <b>To whom it may concern,</b>
-            <br/><br/>
-            I <input type="text" class="pseudo-field" placeholder="Your Full Name" onKeyUp="changeField(this, 'name'); changeField(this, 'name-signature'); changeField(this, 'pseudo-name-signature');"> with <input type="text" class="pseudo-field" placeholder="Your ID" onKeyUp="changeField(this, 'id-type')"> number <input type="text" class="pseudo-field" placeholder="Your ID Number" onKeyUp="changeField(this, 'id-number')"> hereby authorize <br>
-            <input type="text" class="pseudo-field" placeholder="Person to Authorize" onKeyUp="changeField(this, 'person-to-authorize')"> with 
-            <input type="text" class="pseudo-field" placeholder="Person's ID" onKeyUp="changeField(this, 'person-to-authorize-id')"> number 
-            <input type="text" class="pseudo-field" placeholder="Person's ID Number" onKeyUp="changeField(this, 'person-to-authorize-id-number')">
-            <br/><br/>
-            To <input type="text" class="pseudo-field" placeholder="Action/s to Perform" style="width: 30rem;" onKeyUp="changeField(this, 'to-do')"/> on my behalf. 
-            Please do not hesitate to contact me if you require any further information or clarification regarding this authorization.
-            <br><br>
-            <br><br>
-            <b>Sincerely, </b>
-            <br><br>
-            <br><br>
-            <span id="pseudo-name-signature"></span>
-            <br>
-            (Your Signature Above this)
-          </p>
-        </div> -->
-
         <div id="document-actual" class="col-md-6 actual border border-primary">
-          <h3 id="view-title" class="text-center segment-title text-primary mt-4">Actual Printout</h3>
+          <h3 class="view-title text-center segment-title text-primary mt-4">Actual Printout</h3>
 
           <p class="px-5 mt-5">
             <div id="date-today" class="fw-bold actual-field"></div>
@@ -103,28 +70,10 @@
 
     <footer-template></footer-template>
 
-    <script>
-      const documentParent = document.getElementById("document-parent");
-      const documentActual = document.getElementById("document-actual");
-      const documentEditable = documentActual.cloneNode(true);
-
-      const fields = documentEditable.getElementsByClassName("actual-field");
-      const fieldsArray = [].slice.call(fields);
-
-      documentParent.prepend(documentEditable);
-
-      fieldsArray.forEach(function (field, index) {
-        const input = document.createElement("input");
-        input.type = "text";
-        input.placeholder = field.id;
-        input.className = field.className + " pseudo-field";
-        documentEditable.replaceChild(input, field);
-      });
-    </script>
-
     <script src='./components/footer-template.js'></script>
     <script src='./components/print-button.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
+    <script src="./assets/populate-document.js"></script>
   </body>
 </html>

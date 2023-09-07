@@ -5,10 +5,10 @@ class PrintButton extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <button onclick="window.print()" type="submit" class="btn btn-primary w-100">
+      <button type="submit" class="print-btn btn btn-primary w-100">
         Print/Download a Copy
       </button>
-    `
+    `;
   }
 }
 
