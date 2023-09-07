@@ -30,8 +30,8 @@
         </div>
       </div>
 
-      <div class="row text-start">
-        <div class="col-md-6 pseudo border border-secondary">
+      <div id="document-parent" class="row text-start">
+        <!-- <div class="col-md-6 pseudo border border-secondary">
           <h3 class="text-center segment-title text-secondary mt-4">Draft (Edit Here)</h3>
 
           <p class="px-5 mt-5">
@@ -62,10 +62,10 @@
             <br>
             (Your Signature Above this)
           </p>
-        </div>
+        </div> -->
 
-        <div class="col-md-6 actual border border-primary">
-          <h3 class="text-center segment-title text-primary mt-4">Actual Printout</h3>
+        <div id="document-actual" class="col-md-6 actual border border-primary">
+          <h3 id="view-title" class="text-center segment-title text-primary mt-4">Actual Printout</h3>
 
           <p class="px-5 mt-5">
             <div id="date-today" class="fw-bold actual-field"></div>
@@ -102,6 +102,25 @@
     </div>
 
     <footer-template></footer-template>
+
+    <script>
+      const documentParent = document.getElementById("document-parent");
+      const documentActual = document.getElementById("document-actual");
+      const documentEditable = documentActual.cloneNode(true);
+
+      const fields = documentEditable.getElementsByClassName("actual-field");
+      const fieldsArray = [].slice.call(fields);
+
+      documentParent.prepend(documentEditable);
+
+      fieldsArray.forEach(function (field, index) {
+        const input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = field.id;
+        input.className = field.className + " pseudo-field";
+        documentEditable.replaceChild(input, field);
+      });
+    </script>
 
     <script src='./components/footer-template.js'></script>
     <script src='./components/print-button.js'></script>

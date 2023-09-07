@@ -7,20 +7,20 @@ p {
   min-width: 5rem;
 }
 
-input.pseudo-field {
+.pseudo-field {
   border: 0;
   border-bottom: 1px solid #2e2e2e;
   min-width: 10rem;
   width: fit-content;
 }
 
-div.actual div.actual-field {
+.actual-field {
   min-width: 10rem;
   display: inline-block;
   border-bottom: 1px solid #2e2e2e;
 }
 
-div.actual div.long {
+.long {
   min-width: 30rem;
 }
 
