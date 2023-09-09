@@ -7,7 +7,7 @@ template.innerHTML = `
     <div class="container">
       <div class="row">
         <ul class="social ps-0 text-center">
-          <li><a href="file:///Users/anon/Projects/dockeepr/license.html">License</a></li>
+          <li><a href="./license.html">License</a></li>
           <li><a href="https://twitter.com/ThatJuanCodes" target="_blank">Twitter</a></li>
           <li><a href="https://github.com/" target="_blank">Github</a></li>
           <li><a href="https://forms.gle/YQEBuVbbMwwTZsHT6" target="_blank">Suggestions?</a></li>
