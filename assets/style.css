@@ -41,11 +41,11 @@ p {
 }
 
 @media print {
-  div.pseudo {
+  div.pseudo, #document-editable, .footer {
     display: none;
   }
 
-  div.actual {
+  div.actual, #document-actual {
     display: block;
     border: 0 !important;
   }
