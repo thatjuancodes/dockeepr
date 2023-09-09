@@ -11,10 +11,10 @@
       gtag('config', 'G-6WNTSBG3DE');
     </script>
 
-    <title>DocKeepr - Affidavit of Loss</title>
+    <title>DocKeepr - Affidavit of One and the Same</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A free editable affidavit of loss format from DocKeepr">
+    <meta name="description" content="A free editable affidavit of One and the Same format from DocKeepr">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/style.css"/>
@@ -22,11 +22,11 @@
 
   <body>
     <div class="container text-center py-5">
-      <h1 class="doc-title fw-bold mt-5 text-center mb-3">Affidavit of Loss</h1>
+      <h1 class="doc-title fw-bold mt-5 text-center mb-3">Affidavit of One and the Same</h1>
 
       <div class="row mb-3">
         <div class="offset-lg-10 col-lg-2">
-          <button onclick="print();" type="submit" class="print-btn btn btn-primary w-100">
+          <button onclick="window.print();" type="submit" class="print-btn btn btn-primary w-100">
             Print/Download a Copy
           </button>
         </div>
@@ -37,18 +37,30 @@
           <h3 class="view-title text-center segment-title text-primary mt-4">Actual Printout</h3>
 
           <div class="doc-body px-5 mt-5">
-            I, <div id="name" class="actual-field"></div> of legal age, Filipino citizen, and resident of <div id="address" class="actual-field"></div>, <div id="country" class="actual-field"></div>, after being duly sworn in accordance with law, hereby depose and state under oath:
+            I, <div id="name" class="actual-field"></div> of legal age, Filipino citizen, and resident of <div id="address" class="actual-field"></div>, <div id="country" class="actual-field"></div>, after having sworn in accordance with law, do hereby depose and state that:
             <br/><br/>
-            1. That I am the lawful owner/holder of the following lost item/document: <div id="lost-item" class="actual-field"></div>.
+            <ol>
+              <li>
+                I have been known by the name <div id="known-name" class="actual-field"></div> and have been accustomed to using the same in my personal and official records,transactions, and communications, as shown by the following:
+                <ul>
+                  <ol><div id="id-and-number" class="actual-field"></div> issued by the <div id="id-issuer" class="actual-field"></div> on <div id="issued-date" class="actual-field"></div> at <div id="issued-place" class="actual-field"></div>, a copy which is attached hereto as Annex “A”.</ol>
+                </ul>
+              </li>
+
+              <li>
+                My name was recorded as <div id="recorded-name" class="actual-field"></div> on my <div id="id-with-different-name" class="actual-field"></div> registered at the <div id="place-of-registry" class="actual-field"></div>, a copy of which as certified by the <div id="government-agency" class="actual-field"></div> is attached hereto as Annex “B”
+              </li>
+
+              <li>
+                Both the name <div id="recorded-name-again" class="actual-field"></div> and <div id="known-name-again" class="actual-field"></div> refer to one and the same person, the herein Affiant.
+              </li>
+
+              <li>
+                I am executing this affidavit to attest the truth of the foregoing and for whatever legal purpose it may serve.
             <br/>
-            2. That the lost item/document was in my possession and custody, and I have exercised due care and diligence to keep it safe and secure.
-            <br/>
-            3. That I have made a diligent search and inquiry to locate the lost item/document but to no avail. It is irretrievably lost and cannot be recovered.
-            <br/>
-            4. That the loss of the said item/document was not due to any negligence, willful act, or omission on my part.
-            <br/>
-            5. That I am executing this Affidavit of Loss to attest to the truth of the foregoing facts and for the purpose of applying for the issuance of a new/replacement item/document.
-            <br/>
+              </li>
+            </ol>
+
             IN WITNESS WHEREOF, I have hereunto set my hand this 
             <div id="day" class="actual-field"></div> of 
             <div id="month" class="actual-field"></div>, 
