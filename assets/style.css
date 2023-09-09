@@ -67,6 +67,10 @@ p {
     border-bottom: 0;
   }
 
+  input.actual-field {
+    width: fit-content !important;
+  }
+
   button.btn {
     display: none;
   }
