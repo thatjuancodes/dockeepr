@@ -50,6 +50,10 @@ p {
     border: 0 !important;
   }
 
+  .doc-title {
+    margin-top: 0px !important;
+  }
+
   .segment-title {
     display: none;
   }
