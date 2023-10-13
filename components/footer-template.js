@@ -19,7 +19,7 @@ template.innerHTML = `
     </div>
   </footer>
 `
-
+s
 class FooterTemplate extends HTMLElement {
   constructor() {
     super();
